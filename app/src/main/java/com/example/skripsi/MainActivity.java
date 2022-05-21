@@ -3,6 +3,7 @@ package com.example.skripsi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 
@@ -24,11 +25,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        SharedPreferences preferences = getSharedPreferences("PREFERENCE",MODE_PRIVATE);
+        String firsttime = preferences.getString("FirstTimeInstall","");
+
+        if(firsttime.equals("Yes")){
+            openLoginActivity();
+        }
+        else{
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("FirstTimeInstall","Yes");
+            editor.apply();
+        }
+
+
+
     }
 
     private void openLoginActivity() {
+
         Intent intent = new Intent(this,Lactivity.class);
         startActivity(intent);
+        finish();
     }
 
 
