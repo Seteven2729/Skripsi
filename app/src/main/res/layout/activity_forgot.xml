@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/toska"
-    tools:context=".Lactivity">
+    tools:context=".ForgotActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
-        android:text="Sign In"
+        android:text="Forgot Password"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -35,8 +35,36 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.329" />
 
+
+
+       <TextView
+        android:id="@+id/TvCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@color/toska"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.963" />
+
+    <Button
+        android:id="@+id/BTNs"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/toska"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.724" />
+
     <EditText
-        android:id="@+id/ETemail"
+        android:id="@+id/EmaiEditText"
         android:layout_width="330dp"
         android:layout_height="45dp"
         android:background="@drawable/box2"
@@ -49,16 +77,16 @@
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.447" />
+        app:layout_constraintVertical_bias="0.447"  />
 
     <EditText
-        android:id="@+id/ETpassword"
+        android:id="@+id/PasswordEditText"
         android:layout_width="330dp"
         android:layout_height="45dp"
         android:background="@drawable/box2"
         android:drawableRight="@drawable/eye_off"
         android:ems="10"
-        android:hint="Password"
+        android:hint="New Password"
         android:inputType="textPassword"
         android:paddingLeft="15dp"
         android:paddingRight="8dp"
@@ -69,55 +97,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.533" />
 
-    <Button
-        android:id="@+id/Bsignin"
+    <EditText
+        android:id="@+id/editTextPhone"
         android:layout_width="330dp"
-        android:layout_height="60dp"
-        android:backgroundTint="@color/toska"
-        android:text="Sign In"
+        android:layout_height="45dp"
+        android:background="@drawable/box2"
+        android:ems="10"
+        android:hint="Phone"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.631" />
+        app:layout_constraintVertical_bias="0.615" />
 
-    <TextView
-        android:id="@+id/TVgakpenting2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Don't have an account yet?"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.911" />
-
-    <TextView
-        android:id="@+id/RegisterTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:textColor="@color/toska"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.963" />
-
-    <TextView
-        android:id="@+id/TvForgot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:text="Forgot Password?"
-        android:textColor="#84DAD1"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.693" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+

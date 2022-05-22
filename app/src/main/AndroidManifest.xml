@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.skripsi">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Skripsi"
         android:usesCleartextTraffic="true">
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".ForgotActivity"></activity>
+        <activity android:name=".HomeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".Lactivity" />
         <activity

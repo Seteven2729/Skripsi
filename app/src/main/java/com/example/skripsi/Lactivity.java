@@ -85,6 +85,19 @@ public class Lactivity extends AppCompatActivity {
                         return false;
             }
         });
+
+        binding.TvForgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openForgotActivity();
+            }
+        });
+    }
+
+    private void openForgotActivity() {
+        Intent intent = new Intent(this,ForgotActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private void userLogin() {
