@@ -201,6 +201,8 @@ public class    RegisterActivity extends AppCompatActivity {
                             SharedPrefManager.getInstance(getApplicationContext()).userLogin(user);
 
                             //starting the profile activity
+                            finish();
+                            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
 
                         } else {
                             Toast.makeText(getApplicationContext(),obj.getString("message") , Toast.LENGTH_SHORT).show();
@@ -213,8 +215,7 @@ public class    RegisterActivity extends AppCompatActivity {
             //executing the async task
             RegisterUser ru = new RegisterUser();
             ru.execute();
-            finish();
-            startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+
         }
 
 
